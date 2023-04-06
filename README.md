@@ -28,15 +28,7 @@ Add the following line to your `logseq/custom.css` file.
 
 ## 修改内容
 
-- 我个人更喜欢使用深色 + 红色的配色，因此主要的更改在颜色上
-  - 0 饱和度背景
-  - 红色强调色
-  - 调整当前 block 的显示效果
-  - 其他颜色微调
-- 其他改动
-  - 增加表格的外边框和 margin
-  - 增加代码块的 margin
-  - 拓宽 mobile 下页面内容的宽度
+- 侧栏透明化
 
 ## 使用方法
 
