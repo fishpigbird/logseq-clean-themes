@@ -1,3 +1,91 @@
+/* Wrap the content inside code blocks in all themes 
+
+pre, code {
+  white-space : pre-wrap !important;
+}
+
+*/
+
+/* 红粉黑主题：还不错，GitHub中实时更新*/
+/*@import url('https://cdn.jsdelivr.net/gh/LeonWong0609/logseq-default-dark-0-saturation@main/custom.css');*/
+
+/* 红粉黑主题 同上：我上传，GitHub中固定版本*/
+/*@import url('https://cdn.jsdelivr.net/gh/springrain1/logseq_theme@v1.1/custom_favorite.css');*/
+
+
+/* 地图背景  主题：我上传，GitHub中固定版本*/
+/*@import url('https://cdn.jsdelivr.net/gh/springrain1/logseq_theme@v1.1/custom_darkgood.css');*/
+/* 地图背景  主题：我上传，GitHub中固定版本*/
+/*@import url('https://cdn.jsdelivr.net/gh/PiotrSss/logseq-clean-themes@main/bg.css');*/
+/*@import url('F:\Users\birdy.OMEN\Git\logseq\logseq-clean-themes\bg.css');*/
+
+/*@import url('https://cdn.jsdelivr.net/gh/PiotrSss/logseq-clean-themes@main/custom.css');*/
+
+
+/*https://github.com/l3ony2k/logseq-clean-themes-red*/
+/*有点宽了。不好看*/
+/*@import url('https://cdn.jsdelivr.net/gh/LeonWong0609/logseq-clean-themes-red@main/custom.css');*/
+
+
+
+
+
+
+
+/* 绿色主题 - 文本突出，白背板，代码有bug*/
+/*@import url('https://cdn.jsdelivr.net/gh/pengx17/logseq-laurel-theme@master/custom.css');*/
+
+
+/*@import url('https://raw.githubusercontent.com/PiotrSss/logseq-clean-themes/main/bg.css');*/
+
+
+/*logseq-bonofix-主题*/
+/*@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')*/
+
+
+
+
+/* 东京主题：我上传，GitHub中固定版本  绿字 */
+/*@import url('https://cdn.jsdelivr.net/gh/springrain1/logseq_theme@v1.1/tokyo.css');*/
+/* 白黑主题   绿字， 点阵背景 */
+/*@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/main.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-black.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-black-dots.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-white-dots.css');*/
+
+/* 棕褐色+咖啡主题 点阵背景，黄色被调，挺好看*/
+/*@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/main.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/dark-coffee-dots.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-sepia.css');
+@import url('https://piotrsss.github.io/logseq-tools/public/bujo-css/light-sepia-dots.css');*/
+
+
+
+
+
+* {
+  font-family: STZhongsong, sans-serif;
+  font-size:18px;
+}
+
+
+/*不能用*/
+/* 日光化灯光主题 - 普通白色 蓝key 红url */
+/*@import url("https://cdn.jsdelivr.net/gh/nmartin84/logseq-solarized/solarized.css");*/
+
+/* 白净主题：notion 一般 */
+/*@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css')*/
+
+
+/*   黄蓝红  主题：Base16 Atelier Forest*/
+/*@import url('https://raw.githack.com/DenaroCF/LS-Base16-Atelier-Forest-by-Denaro/main/custom.css');*/
+
+
+/* Roam主题：我上传，GitHub中固定版本 有问题 */
+/*@import url('https://cdn.jsdelivr.net/gh/springrain1/logseq_theme@v1.1/custom_Roam.css'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
@@ -87,6 +175,53 @@ html[data-theme="dark"] {
 #app-container {
     background: var(--ct-background);
 }
+
+
+/*微调*/
+
+
+/*tab插件背景颜色 插件的css好像无法被覆盖*/
+.logseq-tab {
+    border-radius: 0;
+    border-width: 0;
+}
+
+.light .logseq-tab[data-active=false] {
+    --tw-bg-opacity: 1;
+    background-color: 0;
+    --tw-text-opacity: 1;
+    color: rgba(156,163,175,var(--tw-text-opacity));
+}
+
+.light .light\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: #0000;
+}
+
+.light .logseq-tab[data-active=true] {
+    --tw-bg-opacity: 1;
+    background-color: #ffbebe66;
+}
+
+/*左侧栏 选中*/
+.left-sidebar-inner a.item.active, .left-sidebar-inner a.item:active {
+    background-color: #ffbebe66;
+}
+/*插件颜色*/
+html[data-theme=light] .cp__header a, html[data-theme=light] a.right-sidebar-button {
+    color: #ffffffb8;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .cp__sidebar-main-layout {
     background: none;
@@ -779,6 +914,7 @@ strong {
 
 .cp__right-sidebar-scollable {
     padding: 20px;
+    
 }
 
 .cp__right-sidebar-topbar {
@@ -1380,6 +1516,10 @@ tr {
 
 .white-theme,
 html[data-theme="light"] {
+    --ls-header-button-background: #ffffffb8;
+    --ls-secondary-background-color: linear-gradient(135deg, rgba(242, 230, 210, .9) 0%, rgba(247, 225, 213, .9) 100%);
+
+
     --ls-search-icon-color: var(--ct-page-reference-color);
     --ls-link-text-color: var(--ct-page-reference-color);
     --ls-link-text-hover-color: var(--ct-page-reference-color-hover);
@@ -1390,6 +1530,7 @@ html[data-theme="light"] {
     --ls-primary-background-color: rgb(60 43 24);
     --ct-background-picture: url(https://i.imgur.com/wgNO5YL.jpg);
     /*     --ct-background-picture: url(https://i.imgur.com/gDZzZbO.jpg); */
+
     --ct-desktop-nav-buttons-color: #887160;
     --ls-scrollbar-foreground-color: #534333;
     --ls-scrollbar-background-color: var(--ls-primary-background-color);
@@ -1599,6 +1740,7 @@ html[data-theme="light"] {
 
 .dark-theme,
 html[data-theme="dark"] {
+    --ls-secondary-background-color: linear-gradient(135deg, rgba(242, 230, 210, .9) 0%, rgba(247, 225, 213, .9) 100%);
     --ls-search-icon-color: var(--ct-page-reference-color);
     --ls-link-text-color: var(--ct-page-reference-color);
     --ls-link-text-hover-color: var(--ct-page-reference-color-hover);
